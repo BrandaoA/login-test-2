@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+#login-home {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+.container {
+  height: inherit;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.avatar {
+  height: 456px;
+  width: 100%;
+}
+
+.img {
+  position: absolute;
+  width: 330px;
+  height: 456px;
+  left: 30px;
+  top: 47px;
+}
+
+.title {
+  width: 100%;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: 2.67rem;
+  font-style: italic;
+  font-weight: 800;
+  margin-bottom: 1.3rem;
+}
+p {
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.btns {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  text-align: center;
+}
+.create-account {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(10, 136, 178);
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+.login {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  border: 3px solid #146C94;
+  color: #146C94;
+  background-color: transparent;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2.3rem;
+}
+.guest {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  color: #142194;
+  margin-bottom: 0.7rem;
+}
+.hidden, .hide{
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .img {
+    left: 90px;
+  }
+}
+@media (min-width: 700px) {
+  .img {
+    left: 50px;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .title  {
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .img {
+    left: 120px;
+  }
+  .main {
+    margin-right: 5rem;
+  }
+  button {
+    cursor: pointer;
+    transition: 0.5s background ease-in-out;
+  }
+  .create-account:hover {
+    background: transparent;
+    border: 3px solid #146C94;
+    color: #146C94;
+  }
+  .login:hover {
+    background: #146C94;
+    border-color: none;
+    color: #fff;
+  }
+  .guest:hover {
+    cursor: pointer;
+  }
+}
+@media (min-width: 1224px) {
+  .img {
+    left: 220px;
+  }
+  .main {
+    margin-right: 11rem;
+  }
+}

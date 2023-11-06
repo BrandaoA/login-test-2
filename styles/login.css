@@ -1,0 +1,242 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-page {
+  font-family: "Inria Serif",sans-serif;
+  font-size: 16px;
+}
+.shape1 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 11rem;
+  /* border-radius: 5.3rem;
+  background-color: #D9D9D9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(11.51deg); */
+  overflow: hidden;
+  z-index: -1;
+}
+.shape1 img {
+  position: absolute;
+  top: -10px;
+  left: 40px; 
+  width: 90%;
+}
+.shape2 {
+  position: absolute;
+  top: -70px;
+  left: -3px;
+  width: 13rem;
+  height: 10rem;
+  border-radius: 5.3rem;
+  background-color: #146C94;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+}
+.shape3 {
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: -3;
+}
+.heading, .heading2 {
+  text-align: center;
+  margin-top: 1.3rem;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5rem;
+}
+
+.login-container {
+  width: 100%;
+  margin-top: 15rem;
+  background-color: #D9D9D9;
+  padding: 0 2rem 1rem;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+}
+.content {
+  position: relative;
+}
+.img-holder {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.form-holder {
+  padding-top: 6rem;
+  width: 100%;
+}
+input[type = email], 
+input[type = password],
+input[type = text],
+input[type = number] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+input:active {
+  outline: none;
+  background-color: transparent;
+}
+input::placeholder {
+  font-family:  "Inria Serif",sans-serif;
+  font-size: 1rem;
+}
+#email {
+  margin-bottom: 4rem;
+}
+#password {
+  margin-bottom: 1.5rem;
+}
+.other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+input[type = checkbox] {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  margin-right: 0.7rem;
+  margin-bottom: 0;
+}
+.forgot-pass {
+  color: #202660;
+}
+.login-btn {
+  font-family:  "Inria Serif",sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #146C94;
+  border-radius: 1.3rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.login-btn img {
+  margin-left: 0.6rem;
+}
+.account {
+  font-family: "Inria Serif",sans-serif;
+  font-size: normal;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.sign-in {
+  color: #202660;
+}
+.pass-holder {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.eye:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .login-page {
+    width: 100%;
+  }
+  .shape1 {
+    top: -75px;
+    left: 30px;
+    border-radius: 5.3rem;
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(11.51deg);
+    height: 15rem;
+  }
+  .shape1 img {
+    display: none;
+  }
+  .shape2 {
+    width: 15rem;
+    height: 12rem;
+    transform: rotate(11.51deg);
+  }
+  .shape3 {
+    width: 22rem;
+    height: 18rem;
+  }
+  .login-container {
+    margin-top: 26rem;
+  }
+  .img-holder {
+    top: 250px;
+    left: 250px;
+  }
+  .img-holder img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: aliceblue;
+  }
+  .sign-in:hover,
+  .forgot-pass:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .hover:hover {
+    cursor: pointer;
+  }
+  .heading,
+  .heading2 {
+    font-size: 3rem;
+  }
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape1-1,
+  .shape2-1,
+  .shape3-1 {
+    display: none;
+  }
+  .login-container {
+    margin-top: 0;
+    width: 400px;
+    margin-left: 12rem;
+    margin-bottom: 5rem;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .img-holder {
+    left: 700px;
+  }
+}
